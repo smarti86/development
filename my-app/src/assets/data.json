@@ -1,0 +1,104 @@
+[
+    {
+      "name": "The Puff Up Tee",
+      "color": "Green",
+      "price": 29.99,
+      "image": "my-app/public/images/1-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Matcha Mille Crepe Cake",
+      "color": "Blue",
+      "price": 54.99,
+      "image": "my-app/public/images/2-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Egg Custard Bun",
+      "color": "Gray",
+      "price": 32.99,
+      "image": "my-app/public/images/3-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Steamed Taro Buns",
+      "color": "Red",
+      "price": 15.99,
+      "image": "my-app/public/images/4-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Chocolate Fudge Brownie",
+      "color": "Blue",
+      "price": 33.99,
+      "image": "my-app/public/images/5-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Macarons",
+      "color": "Gray",
+      "price": 54.99,
+      "image": "my-app/public/images/6-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Multigrain Bread",
+      "color": "Yellow",
+      "price": 54.99,
+      "image": "my-app/public/images/7-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Croissant",
+      "color": "Green",
+      "price": 32.99,
+      "image": "my-app/public/images/8-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Toast with Butter",
+      "color": "Green",
+      "price": 41.99,
+      "image": "my-app/public/images/9-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Tiramisu",
+      "color": "Blue",
+      "price": 23.99,
+      "image": "my-app/public/images/10-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Egg Tart",
+      "color": "White",
+      "price": 52.99,
+      "image": "my-app/public/images/11-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Everything Bagel",
+      "color": "White",
+      "price": 25.99,
+      "image": "my-app/public/images/12-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Gingerbread Man",
+      "color": "Red",
+      "price": 12.99,
+      "image": "my-app/public/images/13-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Cheesecake",
+      "color": "Brown",
+      "price": 39.99,
+      "image": "my-app/public/images/14-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Cream Puff",
+      "color": "Blue",
+      "price": 27.99,
+      "image": "my-app/public/images/15-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Cream Puff",
+      "color": "Yellow",
+      "price": 36.99,
+      "image": "my-app/public/images/16-uiux-reactproject-image.png"
+    },
+    {
+      "name": "Cream Puff",
+      "color": "White",
+      "price": 28.99,
+      "image": "my-app/public/images/17-uiux-reactproject-image.png"
+    }
+  ]

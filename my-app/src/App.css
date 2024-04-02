@@ -1,0 +1,123 @@
+.App {
+  margin: 10%;
+}
+
+.display{
+ 
+  font-size: x-large;
+}
+.bakery-item{
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+
+.BakeryItem{
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 500px;
+  /* background-color: lightgrey; */
+  height: 100%;
+  width: 100%;
+}
+
+.bakery-item-image{
+  display: flex;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+}
+.bakery-item-text{
+  padding: 1rem;
+}
+.bakery-item-label{
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+/* .product-info{
+  width:75%;
+  grid-template-columns: auto auto;
+  flex-direction: column;
+} */
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(249, 249, 249);
+  width: 400px;
+  
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart{
+
+  width: 30%;
+  padding: 12px
+
+}
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
