@@ -1,22 +1,30 @@
 import { useState } from "react";
+import bakeryData from "../assets/data.json";
 
-export default function SideNavBar(){
+export default function SideNavBar(props){
     
     const [sortOrder, setSortOrder] = useState('');
     const [selectedSizes, setSelectedSizes] = useState([]);
     const [selectedColors, setSelectedColors] = useState([]);
+    
    
     // Reference: https://react.dev/learn/thinking-in-react
     // Focused on their section for the SearchBar and the addition of the onChange event handlers that set the parent state from them 
     // and found the section "e.target.value" helpful
     // Also for further clarity, took a peek at https://stackoverflow.com/questions/45624780/e-target-value-on-an-input-field-reactjs-how-does-it-work 
     const handleSizeChange = (sizeEvent) => {
+        console.log("suiiiz")
+
+
         if(sizeEvent.target.checked){
         setSelectedSizes([...selectedSizes, sizeEvent.target.value])
         }
         else{
         setSelectedSizes(selectedSizes.filter((s) => s !== sizeEvent.target.value))
         }
+        setNewData()
+
+
     };
 
     // Same reference as the one directly above
@@ -27,11 +35,17 @@ export default function SideNavBar(){
         else{
         setSelectedColors(selectedColors.filter((c) => c !== colorEvent.target.value))
         }
+
+       setNewData()
     };
 
     // Same reference as the one above
     const handleSortChange = (sortingEvent) => {
+        console.log("helfhskj")
+        setNewData()
+
         setSortOrder(sortingEvent.target.value);
+
     };
 
     const comparePrices = (teeOne, teeTwo) => {
@@ -49,37 +63,43 @@ export default function SideNavBar(){
 
     // Referenced to flesh out idea on how to have both filters apply at the same time: https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops
     // Referenced: https://stackoverflow.com/questions/37141425/filter-return-true-or-false
-    const filteredData = bakeryData.filter(item => {
-        if (selectedSizes.length > 0 && !selectedSizes.includes(item.size)) {
-        return false;
-        }
-        if (selectedColors.length > 0 && !selectedColors.includes(item.color)) {
-        return false;
-        }
-        return true;
-    });
+  
 
-    const sortedBakeryData = filteredData.sort(comparePrices);
+    // filters data and sets the sortedBakeryData
+    function setNewData(){
+        const filteredData = bakeryData.filter(item => {
+            if (selectedSizes.length > 0 && !selectedSizes.includes(item.size)) {
+            return false;
+            }
+            if (selectedColors.length > 0 && !selectedColors.includes(item.color)) {
+            return false;
+            }
+            return true;
+        });
+
+        const sortedBakeryData = filteredData.sort(comparePrices);
+        props.setSortedBakeryData(sortedBakeryData);
+    }
+
+    //setNewData()
 
 
-return(
 
     
+   
+
+
+return( 
         <div>
-            
             {/* Reference: https://react.dev/reference/react-dom/components/select */}
               <div className="price-sorting">
-                <select onChange={handleSortChange}>
+                <select onChange={() => handleSortChange}>
                     <option value="">Sort by Price</option>
                     <option value="priceLowToHigh">Low to High</option>
                     <option value="priceHighToLow">High to Low</option>
                     <option value="reset">Reset</option>
                 </select>
               </div>
-
-
-
-            
 
               {/* Reference for checkbox idea: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */}
               {/* and to cement my understanding: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox */}
@@ -102,8 +122,6 @@ return(
                     <span class="checkmark"></span>
                   </label>
               </div>
-
-
 
               {/* Same as above for size filter: Reference for checkbox idea: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */}
               {/* Reference to handle onChange for checkbox: https://stackoverflow.com/questions/4471401/getting-value-of-html-checkbox-from-onclick-onchange-events */}

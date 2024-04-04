@@ -6,6 +6,8 @@ export default function TeeItem({item, addToCart }) {
         addToCart(item);
     };
 
+    
+
 
     return (
         <div className="product-info">
