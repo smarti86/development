@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import bakeryData from "../assets/data.json";
+
 
 export default function SideNavBar(props){
     
@@ -22,7 +23,7 @@ export default function SideNavBar(props){
         else{
         setSelectedSizes(selectedSizes.filter((s) => s !== sizeEvent.target.value))
         }
-        setNewData()
+       // setNewData()
 
 
     };
@@ -36,13 +37,13 @@ export default function SideNavBar(props){
         setSelectedColors(selectedColors.filter((c) => c !== colorEvent.target.value))
         }
 
-       setNewData()
+    //   setNewData()
     };
 
     // Same reference as the one above
     const handleSortChange = (sortingEvent) => {
         console.log("helfhskj")
-        setNewData()
+       /// setNewData()
 
         setSortOrder(sortingEvent.target.value);
 
@@ -83,7 +84,10 @@ export default function SideNavBar(props){
 
     //setNewData()
 
-
+    useEffect(()=> {
+        console.log("setting new data!");
+        setNewData();
+      }, [selectedColors, selectedSizes, sortOrder])
 
     
 
@@ -91,7 +95,7 @@ return(
         <div>
             {/* Reference: https://react.dev/reference/react-dom/components/select */}
               <div className="price-sorting">
-                <select onChange={() => handleSortChange}>
+              <select onChange={handleSortChange}>
                     <option value="">Sort by Price</option>
                     <option value="priceLowToHigh">Low to High</option>
                     <option value="priceHighToLow">High to Low</option>

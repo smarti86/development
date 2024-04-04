@@ -36,10 +36,10 @@ function App() {
   };
 
   // office hours help!
-  useEffect(() => {
-    console.log("useeffect");
-    console.log(sortedBakeryData);
-  }, [sortedBakeryData, setSortedBakeryData]);
+//   useEffect(() => {
+//     console.log("useeffect");
+//     console.log(sortedBakeryData);
+//   }, [sortedBakeryData, setSortedBakeryData]);
 
   
 
