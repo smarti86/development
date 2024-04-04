@@ -5,10 +5,6 @@ export default function TeeItem({item, addToCart }) {
     const handleAddToCart = () => {
         addToCart(item);
     };
-
-    
-
-
     return (
         <div className="product-info">
             <div className="BakeryItem">

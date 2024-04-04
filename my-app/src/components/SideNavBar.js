@@ -86,8 +86,6 @@ export default function SideNavBar(props){
 
 
     
-   
-
 
 return( 
         <div>
