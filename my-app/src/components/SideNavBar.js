@@ -92,9 +92,10 @@ export default function SideNavBar(props){
     
 
 return( 
-        <div>
+        <div className="sidenavbar">
             {/* Reference: https://react.dev/reference/react-dom/components/select */}
               <div className="price-sorting">
+              <h4>Price Sorting</h4>
               <select onChange={handleSortChange}>
                     <option value="">Sort by Price</option>
                     <option value="priceLowToHigh">Low to High</option>
@@ -107,7 +108,7 @@ return(
               {/* and to cement my understanding: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox */}
               {/* Reference to handle onChange for checkbox: https://stackoverflow.com/questions/4471401/getting-value-of-html-checkbox-from-onclick-onchange-events */}
               <div className="size-filter">
-                <h4>Size Filter:</h4>
+                <h4>Size Filter</h4>
                   <label>
                     <input type="checkbox" value="S" onChange={handleSizeChange} />
                       Small
@@ -128,7 +129,7 @@ return(
               {/* Same as above for size filter: Reference for checkbox idea: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */}
               {/* Reference to handle onChange for checkbox: https://stackoverflow.com/questions/4471401/getting-value-of-html-checkbox-from-onclick-onchange-events */}
               <div className="color-filter">
-                <h4>Color Filter:</h4>
+                <h4>Color Filter</h4>
                   <label>
                     <input type="checkbox" value="White" onChange={handleColorChange} />
                       White
@@ -168,5 +169,5 @@ return(
               
           </div>
 
-)
+);
 }

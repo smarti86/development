@@ -3,18 +3,46 @@
 }
 
 .display{
- 
   font-size: x-large;
 }
-.bakery-item{
+
+.sidenavbar{
+  display: flex;
+  flex-direction:row;
+}
+.tee-item{
   padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
+
+.price-sorting, .size-filter, .color-filter {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.price-sorting {
+  background-color: #c7bfbf;
+}
+
+.size-filter {
+  background-color: #decfcf;
+}
+
+.color-filter {
+  background-color: #d4abab;
+}
+
+.shopping-area{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
 .container{
-  display: flex;
+  /* display: flex; */
   align-items: flex-start;
   /* justify-content: space-between; */
 }

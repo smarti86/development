@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import bakeryData from "./assets/data.json";
 import TeeItem from "./components/BakeryItem";
 import SideNavBar from "./components/SideNavBar";
+import {addToCart, resetCart} from "./components/Cart";
 // import sortedBakeryData from "./components/SideNavBar";
 
 
@@ -21,19 +22,19 @@ function App() {
   
 
   // Reference: Self-citation from React Lab 
-  const addToCart = (item) => {
-      const updatedCart = [...cart];
-      const oldItem = updatedCart.find((tee) => tee.name === item.name);
+//   const addToCart = (item) => {
+//       const updatedCart = [...cart];
+//       const oldItem = updatedCart.find((tee) => tee.name === item.name);
 
-      if (!oldItem) {
-          let newItem = { ...item, count: 1 };
-          updatedCart.push(newItem);
-      } else {
-          oldItem.count++;
-      }
-      setCartTotal(cartTotal + item.price);
-      setCart(updatedCart);
-  };
+//       if (!oldItem) {
+//           let newItem = { ...item, count: 1 };
+//           updatedCart.push(newItem);
+//       } else {
+//           oldItem.count++;
+//       }
+//       setCartTotal(cartTotal + item.price);
+//       setCart(updatedCart);
+//   };
 
   // office hours help!
 //   useEffect(() => {
@@ -50,7 +51,6 @@ function App() {
           <div className="display">
               <div className="container">
                   
-                  <div>
                     <SideNavBar
                         setSortedBakeryData={setSortedBakeryData}
                         >
@@ -62,27 +62,32 @@ function App() {
                         selectedColors={selectedColors}
                         setSelectedColors={setSelectedColors} */}
                     </SideNavBar>
-                  </div>
-                  <div className="cart">
-                      <h2>Cart</h2>
-                      {cart.map((item, index) => (
-                          <p key={index}>
-                              {item.count}x {item.name}
-                          </p>
-                      ))}
-                      <p className="total">Total: ${cartTotal.toFixed(2)}</p>
-                      {/* <p className="item-count">Item Count: {cart.size()}</p> */}
-                  </div>
-                  <div className="bakery-item">
-                   
-                      {sortedBakeryData.map((item, index) => (
-                          <TeeItem
-                              key={index}
-                              item={item}
-                              addToCart={addToCart}
-                          />
-                      ))}
-                  </div>
+              
+
+                <div className="shopping-area">          
+                    <div className="tee-item">
+                    
+                        {sortedBakeryData.map((item, index) => (
+                            <TeeItem
+                                key={index}
+                                item={item}
+                                addToCart={() => addToCart(cart, setCart, cartTotal, setCartTotal, item)}
+                            />
+                        ))}
+                    </div>
+
+                    <div className="cart">
+                        <h2>Cart</h2>
+                        {cart.map((item, index) => (
+                            <p key={index}>
+                                {item.count}x {item.name}
+                            </p>
+                        ))}
+                        <p className="total">Total: ${cartTotal.toFixed(2)}</p>
+                        {/* <p className="item-count">Item Count: {cart.size()}</p> */}
+                        <button onClick={() => resetCart(setCart, setCartTotal)}>Reset Cart</button>
+                    </div>
+                </div> 
               </div>
           </div>
       </div>
