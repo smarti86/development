@@ -13,28 +13,49 @@
 .tee-item{
   padding: 5%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  
+}
+  
+  
+.button:hover {
+    background-color: #45a049;
+  
+}
 
 .price-sorting, .size-filter, .color-filter {
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f7eeee;
   border-radius: 5px;
 }
 
 .price-sorting {
-  background-color: #c7bfbf;
+  background-color: #f2e4d0;
 }
 
 .size-filter {
-  background-color: #decfcf;
+  background-color: #eafbe3;
 }
 
 .color-filter {
-  background-color: #d4abab;
+  background-color: #dbecf8;
 }
 
 .shopping-area{
@@ -42,49 +63,61 @@
   gap: 1rem;
 }
 .container{
-  /* display: flex; */
+
   align-items: flex-start;
-  /* justify-content: space-between; */
+  
+}
+.product-info {
+  /* width: calc(60% - 10px); */
+  
 }
 
-.BakeryItem{
-  border-radius: 10px;
+.BakeryItem {
+  border: 1px solid #ccc;
+  border-radius: 8px;
   overflow: hidden;
-  justify-content: center;
-  margin-bottom: 20px;
-  max-width: 500px;
-  /* background-color: lightgrey; */
-  height: 100%;
-  width: 100%;
 }
 
-.bakery-item-image{
-  display: flex;
-  object-fit: cover;
-  width: 400px;
-  height: 300px;
+.bakery-item-image {
+  width: 100%; 
+  height: auto; 
 }
-.bakery-item-text{
+
+.bakery-item-text {
   padding: 1rem;
 }
-.bakery-item-label{
-  font-weight: 700;
-  font-size: x-large;
-  margin-bottom: 20px;
+
+.bakery-item-label {
+  font-size: 1.2rem; 
+  font-weight: bold;
 }
 
-/* .product-info{
-  width:75%;
-  grid-template-columns: auto auto;
-  flex-direction: column;
-} */
-.item{
+.bakery-item-text {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(249, 249, 249);
-  width: 400px;
-  
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.bakery-item-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px; 
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #45a049;
 }
 
 .price{

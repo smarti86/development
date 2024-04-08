@@ -14,7 +14,7 @@ export default function TeeItem({item, addToCart }) {
                         <h2 className="bakery-item-label">{item.name}</h2>
                         <p className="bakery-item-description">{item.size}</p>
                         <p className="bakery-item-description">{item.color}</p>
-                        <p className="price">${item.price}</p>
+                        <p className="bakery-item-description">${item.price}</p>
                         <button onClick={handleAddToCart} className="button">Add to Cart</button>
                     </div>
                 </div>
