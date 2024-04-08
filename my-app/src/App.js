@@ -63,7 +63,7 @@ function App() {
                             setSelectedColors={setSelectedColors} */}
                         </SideNavBar>
                 
-
+                        <h4>View Cart Below!</h4>
                     <div className="shopping-area">          
                         <div className="tee-item">
                         
@@ -89,7 +89,7 @@ function App() {
                         ))}
                         <p className="total">Total: ${cartTotal.toFixed(2)}</p>
                         {/* <p className="item-count">Item Count: {cart.size()}</p> */}
-                        <button onClick={() => resetCart(setCart, setCartTotal)}>Reset Cart</button>
+                        <button className="reset"onClick={() => resetCart(setCart, setCartTotal)}>Reset Cart</button>
                     </div>
           </div>
       </div>

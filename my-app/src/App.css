@@ -1,5 +1,5 @@
 .App {
-  margin: 10%;
+  margin: 5%;
 }
 
 .display{
@@ -8,7 +8,9 @@
 
 .sidenavbar{
   display: flex;
-  flex-direction:row;
+  justify-content: center; 
+  align-items: center; 
+  
 }
 .tee-item{
   padding: 5%;
@@ -65,7 +67,8 @@
 .container{
 
   align-items: flex-start;
-  
+  justify-content: center; 
+   
 }
 .product-info {
   /* width: calc(60% - 10px); */
@@ -103,6 +106,8 @@
   font-size: 1rem;
   margin-top: 10px;
   text-align: center;
+  font-size: 1.2rem; 
+  font-weight: bold;
 }
 
 .button {
@@ -131,6 +136,20 @@
   width: 30%;
   padding: 12px
 
+}
+
+.reset {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reset:hover {
+  background-color: #d32f2f; 
 }
 
 

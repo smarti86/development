@@ -132,37 +132,37 @@ return(
                 <h4>Color Filter</h4>
                   <label>
                     <input type="checkbox" value="White" onChange={handleColorChange} />
-                      White
+                      White 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Yellow" onChange={handleColorChange} />
-                    Yellow
+                    Yellow 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Red" onChange={handleColorChange} />
-                      Red
+                      Red 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Green" onChange={handleColorChange} />
-                      Green
+                      Green 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Blue" onChange={handleColorChange} />
-                      Blue
+                      Blue 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Brown" onChange={handleColorChange} />
-                      Brown
+                      Brown 
                     <span class="checkmark"></span>
                   </label>
                   <label>
                     <input type="checkbox" value="Gray" onChange={handleColorChange} />
-                      Gray
+                      Gray 
                     <span class="checkmark"></span>
                   </label>
               </div>
