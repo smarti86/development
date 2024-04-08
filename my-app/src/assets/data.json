@@ -4,119 +4,119 @@
       "color": "Green",
       "size":"M",
       "price": 29.99,
-      "image": "my-app/public/images/1-uiux-reactproject-image.png"
+      "image": "images/1-uiux-reactproject-image.png"
     },
     {
       "name": "The LA Tee",
       "color": "Blue",
       "size":"L",
       "price": 54.99,
-      "image": "my-app/public/images/2-uiux-reactproject-image.png"
+      "image": "images/2-uiux-reactproject-image.png"
     },
     {
       "name": "'Hardly Working' Tee",
       "color": "Gray",
       "size":"S",
       "price": 32.99,
-      "image": "my-app/public/images/3-uiux-reactproject-image.png"
+      "image": "images/3-uiux-reactproject-image.png"
     },
     {
       "name": "Tulum Tank",
       "color": "Red",
       "size":"M",
       "price": 15.99,
-      "image": "my-app/public/images/4-uiux-reactproject-image.png"
+      "image": "images/4-uiux-reactproject-image.png"
     },
     {
       "name": "Charlotte Tank",
       "color": "Blue",
       "size":"L",
       "price": 33.99,
-      "image": "my-app/public/images/5-uiux-reactproject-image.png"
+      "image": "images/5-uiux-reactproject-image.png"
     },
     {
       "name": "Gloomy Tank",
       "color": "Gray",
       "size":"S",
       "price": 54.99,
-      "image": "my-app/public/images/6-uiux-reactproject-image.png"
+      "image": "images/6-uiux-reactproject-image.png"
     },
     {
       "name": "Sunny Tee",
       "color": "Yellow",
       "size":"M",
       "price": 54.99,
-      "image": "my-app/public/images/7-uiux-reactproject-image.png"
+      "image": "images/7-uiux-reactproject-image.png"
     },
     {
       "name": "'Get Bent' Tee",
       "color": "Green",
       "size":"L",
       "price": 32.99,
-      "image": "my-app/public/images/8-uiux-reactproject-image.png"
+      "image": "images/8-uiux-reactproject-image.png"
     },
     {
       "name": "Forest Tank",
       "color": "Green",
       "size":"S",
       "price": 41.99,
-      "image": "my-app/public/images/9-uiux-reactproject-image.png"
+      "image": "images/9-uiux-reactproject-image.png"
     },
     {
       "name": "Swell Tank",
       "color": "Blue",
       "size":"M",
       "price": 23.99,
-      "image": "my-app/public/images/10-uiux-reactproject-image.png"
+      "image": "images/10-uiux-reactproject-image.png"
     },
     {
       "name": "Alpine Tee",
       "color": "White",
       "size":"L",
       "price": 52.99,
-      "image": "my-app/public/images/11-uiux-reactproject-image.png"
+      "image": "images/11-uiux-reactproject-image.png"
     },
     {
       "name": "'Dont Be A Square' Tee",
       "color": "White",
       "size":"S",
       "price": 25.99,
-      "image": "my-app/public/images/12-uiux-reactproject-image.png"
+      "image": "mages/12-uiux-reactproject-image.png"
     },
     {
       "name": "'Los Angeles' Love Tee",
       "color": "Red",
       "size":"M",
       "price": 12.99,
-      "image": "my-app/public/images/13-uiux-reactproject-image.png"
+      "image": "images/13-uiux-reactproject-image.png"
     },
     {
       "name": "Bruno Tee",
       "color": "Brown",
       "size":"L",
       "price": 39.99,
-      "image": "my-app/public/images/14-uiux-reactproject-image.png"
+      "image": "images/14-uiux-reactproject-image.png"
     },
     {
       "name": "Smiley Tee",
       "color": "Blue",
       "size":"S",
       "price": 27.99,
-      "image": "my-app/public/images/15-uiux-reactproject-image.png"
+      "image": "images/15-uiux-reactproject-image.png"
     },
     {
       "name": "'Cool Cool' Tee",
       "color": "Yellow",
       "size":"M",
       "price": 36.99,
-      "image": "my-app/public/images/16-uiux-reactproject-image.png"
+      "image": "images/16-uiux-reactproject-image.png"
     },
     {
       "name": "'Pickleball' Tee",
       "color": "White",
       "size":"L",
       "price": 28.99,
-      "image": "my-app/public/images/17-uiux-reactproject-image.png"
+      "image": "images/17-uiux-reactproject-image.png"
     }
   ]
  

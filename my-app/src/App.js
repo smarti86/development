@@ -51,32 +51,36 @@ function App() {
           <div className="display">
               <div className="container">
                   
-                    <SideNavBar
-                        setSortedBakeryData={setSortedBakeryData}
-                        >
-                        {/* key={index}
-                        item={item}
-                        setSortOrder={setSortOrder}
-                        selectedSizes={selectedSizes}
-                        setSelectedSizes={setSelectedSizes}
-                        selectedColors={selectedColors}
-                        setSelectedColors={setSelectedColors} */}
-                    </SideNavBar>
-              
+                        <SideNavBar
+                            setSortedBakeryData={setSortedBakeryData}
+                            >
+                            {/* key={index}
+                            item={item}
+                            setSortOrder={setSortOrder}
+                            selectedSizes={selectedSizes}
+                            setSelectedSizes={setSelectedSizes}
+                            selectedColors={selectedColors}
+                            setSelectedColors={setSelectedColors} */}
+                        </SideNavBar>
+                
 
-                <div className="shopping-area">          
-                    <div className="tee-item">
-                    
-                        {sortedBakeryData.map((item, index) => (
-                            <TeeItem
-                                key={index}
-                                item={item}
-                                addToCart={() => addToCart(cart, setCart, cartTotal, setCartTotal, item)}
-                            />
-                        ))}
+                    <div className="shopping-area">          
+                        <div className="tee-item">
+                        
+                            {sortedBakeryData.map((item, index) => (
+                                <TeeItem
+                                    key={index}
+                                    item={item}
+                                    addToCart={() => addToCart(cart, setCart, cartTotal, setCartTotal, item)}
+                                />
+                            ))}
+                        </div>
                     </div>
 
-                    <div className="cart">
+                    
+              
+              </div>
+              <div className="cart">
                         <h2>Cart</h2>
                         {cart.map((item, index) => (
                             <p key={index}>
@@ -87,8 +91,6 @@ function App() {
                         {/* <p className="item-count">Item Count: {cart.size()}</p> */}
                         <button onClick={() => resetCart(setCart, setCartTotal)}>Reset Cart</button>
                     </div>
-                </div> 
-              </div>
           </div>
       </div>
   );
