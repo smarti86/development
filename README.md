@@ -2,7 +2,7 @@
 csci1300 development assignment
 
 # Link to your deployed React app, running on Vercel 
-
+https://development-2957.vercel.app
 
 # Instructions on how to locally run your application (similar to default React README)
 Open your terminal and type `npm install`
